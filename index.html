@@ -144,36 +144,82 @@
       }
       .about h1,
       .menu h1,
-      .contact h1{
+      .contact h1 {
         text-align: center;
         font-size: 2.3rem;
         margin-bottom: 1.5rem;
       }
-      .about .row{
+      .about .row {
         display: flex;
       }
-      .about .row .about-img{
+      .about .row .about-img {
         flex: 1 1 45rem;
       }
-      .about .row .about-img img{
+      .about .row .about-img img {
         width: 100%;
       }
-      .about .row .content{
+      .about .row .content {
         flex: 1 1 45rem;
         margin-left: 2rem;
       }
-      .about .row .content h2{
+      .about .row .content h2 {
         font-size: 1.7rem;
         margin: 0.8rem 0 1rem;
       }
-      .about .row .content p{
+      .about .row .content p {
         max-width: 33rem;
         margin: 0 0 1rem;
         font-weight: 90;
         font-size: 1.3rem;
       }
-      .about .row .content p span{
+      .about .row .content p span {
         color: var(--primary);
+      }
+      /* Menu */
+      .menu .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        column-gap: 4rem;
+        justify-content: center;
+      }
+      .menu .row .menu-card {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7),
+          -5px -5px 10px rgba(255, 255, 255, 0.06);
+        position: relative;
+        width: 15rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+      }
+      .menu .row .menu-card img {
+        align-self: center;
+        width: 8rem;
+      }
+      .menu .row .menu-card h3 {
+        margin-top: 1rem;
+        text-align: center;
+      }
+      .menu .row .menu-card .price {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: var(--primary);
+        border-radius: 0 0.5rem 0 0.5rem;
+        padding: 0.4rem;
+        font-size: large;
+        font-family: sans-serif;
+        font-weight: 100;
+      }
+      .menu .row .menu-card .add-cart {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: var(--primary);
+        border-radius: 0.5rem 0 0.5rem 0;
+        padding: 0.2rem;
       }
     </style>
   </head>
@@ -223,6 +269,48 @@
             and the stories behind every origin. Because for us, it’s not just
             coffee — it’s a moment you can return to, again and again.
           </p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu-Menuan -->
+    <section id="menu" class="menu">
+      <h1><span>Menu</span> Kami</h1>
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/1.png" alt="Americano" />
+          <h3>Americano</h3>
+          <p class="price">18k</p>
+          <p class="add-cart"><i data-feather="plus"></i></p>
+        </div>
+        <div class="menu-card">
+          <img src="img/2.png" alt="Espresso" />
+          <h3>Espresso</h3>
+          <p class="price">18k</p>
+          <p class="add-cart"><i data-feather="plus"></i></p>
+        </div>
+        <div class="menu-card">
+          <img src="img/3.png" alt="Iced Matcha" />
+          <h3>Iced Matcha</h3>
+          <p class="price">18k</p>
+          <p class="add-cart"><i data-feather="plus"></i></p>
+        </div>
+        <div class="menu-card">
+          <img src="img/4.png" alt="Iced Latte" />
+          <h3>Iced Latte</h3>
+          <p class="price">18k</p>
+          <p class="add-cart"><i data-feather="plus"></i></p>
+        </div>
+        <div class="menu-card">
+          <img src="img/5.png" alt="Iced Americano" />
+          <h3>Iced Americano</h3>
+          <p class="price">18k</p>
+          <p class="add-cart"><i data-feather="plus"></i></p>
+        </div>
+        <div class="menu-card">
+          <img src="img/6.png" alt="Iced White Coffee" />
+          <h3>Iced White Coffee</h3>
+          <p class="price">18k</p>
+          <p class="add-cart"><i data-feather="plus"></i></p>
         </div>
       </div>
     </section>
