@@ -30,12 +30,13 @@
         margin: 0;
         padding: 0;
       }
-      body{
-        font-family: 'Signika', sans-serif;
+      body {
+        font-family: "Signika", sans-serif;
+        object-fit: cover;
       }
 
       /* Navbar */
-      .navbar{
+      .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -50,45 +51,78 @@
         left: 0;
         z-index: 99;
       }
-      .navbar .nav-title{
-        font-family: 'Pacifico', cursive;
-        font-size: 2.2rem;
+      .navbar .nav-title {
+        font-family: "Pacifico", cursive;
+        font-style: italic;
+        font-size: 2.4rem;
         font-weight: 300;
       }
-      h1 span{
+      h1 span {
         color: var(--primary);
       }
-      .navbar .nav-section a{
+      .navbar .nav-section a {
         display: inline-block;
         font-size: 1.2rem;
         margin: 0 1.2rem;
         transition: all 0.3s ease-in-out;
       }
-      .navbar .nav-section a:hover{
-        color: #d6916b;
+      .navbar .nav-section a:hover {
+        color: #ffc5a5;
       }
-      .navbar .nav-section a::after{
-        content: '';
+      .navbar .nav-section a::after {
+        content: "";
         display: block;
         transform: scaleX(0);
         border-bottom: 1px solid var(--primary);
         margin-top: 0.2rem;
         transition: 0.3s ease-in-out;
       }
-      .navbar .nav-section a:hover::after{
+      .navbar .nav-section a:hover::after {
         transform: scaleX(1);
       }
-      .navbar .xtra a{
+      .navbar .xtra a {
         display: inline-block;
         margin: 0 0.4rem;
       }
-      #hamburger{
+      #hamburger {
         display: none;
+      }
+
+      /* Landing Page */
+      .home{
+        height: 100vh;
+        background: url(img/landing.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+      }
+      .home .content{
+        margin-left: 4rem;
+        text-shadow: 1px 1px 3px black;
+        max-width: 35rem;
+      }
+      .home .content h1{
+        font-size: 4.8rem;
+        line-height: 5rem;
+      }
+      .home .content p{
+        margin: 0.4rem 0 2rem;
+        font-weight: 100;
+        font-size: 1.2rem;
+      }
+      .home .content .cta{
+        padding: 0.8rem 3rem;
+        background-color: var(--primary);
+        border: 0.5px white solid;
+        border-radius: 0.35rem;
+        margin-top: 3rem;
+        box-shadow: 1px 1px 3px var(--bg);
       }
     </style>
   </head>
   <body>
-    
     <!-- Navnav -->
     <nav class="navbar">
       <h1 class="nav-title">Kopi<span>Rindu</span></h1>
@@ -104,6 +138,14 @@
         <a href="#" id="hamburger"><i data-feather="menu"></i></a>
       </div>
     </nav>
+    <!-- Ini Home -->
+    <section id="home" class="home">
+      <main class="content">
+        <h1>A Sip That Feels Like <span>Home</span></h1>
+        <p>Let every sip take you closer to the places you love, the people you miss, and the moments you keep replaying.</p>
+        <a href="#menu" class="cta">Order Now</a>
+      </main>
+    </section>
 
     <!-- Icons -->
     <script>
